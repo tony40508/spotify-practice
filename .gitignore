@@ -1,0 +1,7 @@
+# MacOS generated files
+.DS_Store
+
+# Map File
+*.map
+
+node_modules

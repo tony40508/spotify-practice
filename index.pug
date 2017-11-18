@@ -1,0 +1,153 @@
+doctype html
+html(lang="zh-TW")
+    head
+        meta(charset="UTF-8")
+        title Spotify Practice
+        link(rel="stylesheet" href="css/normalize.css")
+        link(rel="stylesheet" href="css/bootstrap.min.css")
+        link(rel="stylesheet" href="style.css")
+    body
+        .wrapper
+            .main_bg
+            header.navbar
+                .container
+                    a(href="#")
+                        .navbar_logo Spotify
+                    .navbar_items
+                        a(href="#") Premium
+                        a(href="#") Help
+                        a(href="#") Download
+                        li.divider(role="separator")
+                        a(href="#") Sign up
+                        a(href="#") Log in
+            section.main
+                .jumbotron
+                    .carousel.slide(id="carouselIndicators" data-ride="carousel")
+                        ol.carousel-indicators
+                            li(data-target="#carouselIndicators" data-slide-to="0").active
+                            li(data-target="#carouselIndicators" data-slide-to="1")
+                            li(data-target="#carouselIndicators" data-slide-to="2")
+                            li(data-target="#carouselIndicators" data-slide-to="3")
+                        .carousel-inner
+                            .item.active
+                                h1.text 3 months of Premium for $0.99.
+                                a(href="#").btn.btn-lg.btn-solid Learn More
+                                h4.text Or sign up for our 
+                                    a(href="#") free service
+                            .item
+                                h1.text Premium for whole family <br> Just $14.99.
+                            .item
+                                h1.text Students get 50% off Premium.
+                            .item
+                                h1.text Play Spotify on PlayStation®.
+                        a(href="#carouselIndicators" data-slide="prev").carousel-control.left
+                            span.icon-prev
+                        a(href="#carouselIndicators" data-slide="next").carousel-control.right
+                            span.icon-next
+                .btn_scroll
+                    a(href="#whatsOn")
+                        span.btn_scroll_text LEARN ABOUT SPOTIFY
+                
+
+
+                .whatsOn.givePadding(id="whatsOn")
+                    .container
+                        .row
+                            .col-1-2
+                                .album  
+                                    .album_art  
+                                        img(src="https://pl.scdn.co/images/pl/default/a705ea088c587f03f309b71e8216ba6367646cea")
+                                    .album_art
+                                        img(src="https://i.scdn.co/image/33ce929f53593b7d6de1e7592823153ffb6ff03e")
+                                    .album_art  
+                                        img(src="https://i.scdn.co/image/8b662d81966a0ec40dc10563807696a8479cd48b")
+                                    .album_art 
+                                        img(src="https://i.scdn.co/image/6c41981dc659cc8a19a0371f42951d8dec48db7c")
+                            .col-1-2
+                                .album_text
+                                    h2.text_purple What's on Spotify?
+                                    h3.text_purple Music
+                                    p There are millions of songs on Spotify. Play your favorites,
+                                    <br>
+                                    p discover new tracks, and build the perfect collection.
+
+                                    h3.text_purple Playlists
+                                    p You will find readymade playlists to match your mood, put
+                                    <br>
+                                    p together by music fans and experts. 
+                                    
+                                    h3.text_purple New Releases
+                                    p Hear this week's latest singles and albums, and check out
+                                    <br>
+                                    p what's hot in the Top 50.
+                
+                .albums.givePadding
+                    .container
+                        .row
+                            .col-1-3
+                                h2 It's easy.
+                                h3.text_aquamarine Search
+                                p Know what you want to listen to ?
+                                <br>
+                                p Just search and hit play
+
+                                h3.text_aquamarine Browse
+                                p Check out the latest charts, brand
+                                <br>
+                                p new releases and great playlists for 
+                                <br>
+                                p right now.
+
+                                h3.text_aquamarine Discover
+                                p Enjoy new music every Monday
+                                <br>
+                                p with your own personal playlist. Or
+                                <br>
+                                p sit back and enjoy Radio.
+                            .phone_group
+                                .row
+                                    .col-1-3
+                                        .phone.phone1
+                                            img(src="img/phone1.png")
+                                    .col-1-3
+                                        .phone.phone2
+                                            img(src="img/phone2.jpg")
+                                        .phone.phone3
+                                            img(src="img/phone3.png")
+                                    .col-1-3
+                                        .phone.phone4
+                                            img(src="img/phone4.jpg")
+
+                .devices.givePadding
+                    .container
+                        .elements Elements
+
+                .subscriptions.givePadding
+                    .container
+                        .row
+                            .col-5-6
+                                .elements Elements
+
+            footer.footer
+                .container
+                    .row
+                        .col-1-6
+                            .elements Elements
+                        .col-1-6
+                            .elements Elements
+                        .col-1-6
+                            .elements Elements
+                        .col-1-6
+                            .elements Elements
+                        .col-1-3
+                            .elements Elements
+                    .row.row_small
+                        .col-1-2
+                            .elements Elements
+                        .col-1-2
+                            .elements Elements
+
+        script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
+        script(src="js/transition.js")
+        script(src="js/bootstrap.min.js")
+        script(src="js/main.js")
