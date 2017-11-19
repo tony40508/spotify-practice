@@ -12,7 +12,44 @@ body {
   font-family: Circular, Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 1.5;
-  color: #222326;
+  color: white;
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 60px;
+}
+
+h2 {
+  font-size: 50px;
+  line-height: 1;
+  margin: 0 0 0.75em;
+  font-weight: 900;
+}
+
+h3 {
+  font-size: 40px;
+  font-weight: 900;
+  line-height: 1.4;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+p {
+  margin: -10px;
+  padding: 0px 10px;
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.text_aquamarine {
+  color: #9bf0e1;
+}
+
+.text_purple {
+  color: #7c25f8;
 }
 
 .wrapper {
@@ -149,6 +186,41 @@ body {
   padding-bottom: 180px;
 }
 
+.btn {
+  padding: 18px 48px 16px;
+  margin: 20px 10px 30px;
+  font-size: 14px;
+  line-height: 1;
+  border-radius: 500px;
+  transition-property: background-color, border-color, color, box-shadow, filter;
+  transition-duration: 0.3s;
+  border-width: 0;
+  letter-spacing: 2px;
+  min-width: 160px;
+  text-transform: uppercase;
+  white-space: normal;
+}
+
+.btn-solid {
+  color: #fff;
+  background-color: #7c25f8;
+}
+
+.btn-solid:visited {
+  color: #fff;
+}
+
+.btn-solid:hover {
+  color: #fff;
+  background-color: #6207e3;
+}
+
+.btn-lg {
+  font-size: 16px;
+  padding: 21px 56px 19px;
+  border-radius: 500px;
+}
+
 .jumbotron {
   background: none;
   padding-top: 150px;
@@ -190,10 +262,6 @@ body {
   height: 300px;
 }
 
-.jumbotron .carousel-inner .item h1 {
-  font-weight: 900;
-}
-
 .jumbotron .carousel-inner .item h3 a {
   color: #fff;
   text-decoration: underline;
@@ -203,37 +271,6 @@ body {
   color: white;
   font-weight: normal;
   margin: 20px;
-}
-
-.jumbotron .carousel-inner .btn {
-  padding: 18px 48px 16px;
-  margin: 20px 10px 30px;
-  font-size: 14px;
-  line-height: 1;
-  border-radius: 500px;
-  transition-property: background-color, border-color, color, box-shadow, filter;
-  transition-duration: 0.3s;
-  border-width: 0;
-  letter-spacing: 2px;
-  min-width: 160px;
-  text-transform: uppercase;
-  white-space: normal;
-}
-
-.jumbotron .carousel-inner .btn-solid {
-  color: #fff;
-  background-color: #7c25f8;
-}
-
-.jumbotron .carousel-inner .btn-solid:hover {
-  color: #fff;
-  background-color: #6207e3;
-}
-
-.jumbotron .carousel-inner .btn-lg {
-  font-size: 16px;
-  padding: 21px 56px 19px;
-  border-radius: 500px;
 }
 
 .jumbotron .carousel-control.left, .jumbotron .carousel-control.right {
@@ -271,30 +308,6 @@ body {
   letter-spacing: 0.1em;
 }
 
-h2 {
-  font-size: 50px;
-  line-height: 1;
-  margin: 0 0 0.75em;
-  font-weight: 900;
-}
-
-h3 {
-  font-size: 40px;
-  font-weight: 900;
-  line-height: 1.4;
-}
-
-h4 {
-  font-size: 20px;
-}
-
-p {
-  margin: -10px;
-  padding: 0px 10px;
-  font-weight: 400;
-  font-size: 18px;
-}
-
 .whatsOn {
   background-color: #fff;
   padding-bottom: 230px;
@@ -315,20 +328,12 @@ p {
   white-space: nowrap;
 }
 
-.whatsOn .text_purple {
-  color: #7c25f8;
-}
-
-.albums h2, .albums p {
-  color: white;
+.whatsOn .album_text p {
+  color: #222326;
 }
 
 .albums .elements {
   height: 400px;
-}
-
-.albums .text_aquamarine {
-  color: #9bf0e1;
 }
 
 .albums .phone_group {
@@ -367,11 +372,94 @@ p {
 }
 
 .subscriptions {
-  padding-bottom: 0px;
+  padding-bottom: 150px;
+}
+
+.subscriptions .end p {
+  position: absolute;
+  bottom: -130px;
+  left: 50%;
+  transform: translateX(-50%);
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.subscriptions ul {
+  margin: 0px;
+  padding: 0px;
+}
+
+.subscriptions ul li {
+  list-style: none;
+  padding-bottom: 5px;
+}
+
+.subscriptions .text {
+  color: white;
 }
 
 .subscriptions .elements {
-  height: 800px;
+  height: 100%;
+  border: none;
+  background: none;
+}
+
+.subscriptions .elements h1 {
+  font-weight: 900;
+  margin-top: 0px;
+}
+
+.subscriptions .elements h3 {
+  margin-bottom: 0px;
+}
+
+.subscriptions .elements h4 {
+  border-bottom: 1.5px solid white;
+  padding-bottom: 26px;
+}
+
+.subscriptions .elements .btn {
+  margin: 10px 0px;
+}
+
+.subscriptions .elements .intro, .subscriptions .elements .spotify_premium {
+  width: 100%;
+  height: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.subscriptions .elements .intro span, .subscriptions .elements .spotify_premium span {
+  font-weight: 400;
+  font-size: 18px;
+}
+
+.subscriptions .elements .intro {
+  border-bottom: 1.5px solid white;
+}
+
+.subscriptions .elements .premium span {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.subscriptions .elements .premium .right {
+  float: right;
+}
+
+.subscriptions .phone {
+  width: 458px;
+  height: 1000px;
+  background-color: #fff;
+  margin-left: 30px;
+  background: url("../img/iphone-klein-purple.png") no-repeat;
+  background-size: cover;
+}
+
+.subscriptions .phone img {
+  top: 95px;
+  left: 30px;
+  max-height: 780px;
 }
 
 .footer {
