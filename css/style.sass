@@ -76,11 +76,26 @@ p
             text-shadow: none
             width: 132px 
             height: 40px
-            background-image: url('../img/spotify-logo.png') 
+            background-image: url('../img/logo.svg') 
             background-repeat: no-repeat
             background-size: 100% 100%
             color: transparent
             cursor: pointer
+
+
+.navbar, .at_top
+    position: fixed
+    top: 0
+    left: 0
+    width: 100%
+    z-index: 5
+    transition: 0.5s
+    .elements
+        height: 80px
+.navbar 
+    background-color: rgba(0, 0, 0, 0.6)
+.at_top
+    background-color: transparent
 
 .row
     margin: 0px -15px 
@@ -111,16 +126,6 @@ p
 .col-1-6
     width: 16.66667%
 
-.navbar
-    background-color: rgba(0, 0, 0, 0.6)
-    position: fixed
-    top: 0
-    left: 0
-    width: 100%
-    z-index: 5
-    .elements
-        height: 80px
- 
 .main_bg
     background: url('../img/bg-main-img.png') center center 
     position: fixed
@@ -205,9 +210,15 @@ p
         margin-top: 50px
         .item
             height: 300px
-            h3 a
-                color: #fff
+            h4 a
+                transition: 0.5s
                 text-decoration: underline
+                &:visited
+                    color: #9bf0e1
+                &:hover
+                    color: #fff
+                
+
         .text
             color: white
             font-weight: normal
@@ -295,6 +306,12 @@ p
             transform: translateX(-50%)
             line-height: 1
             white-space: nowrap
+            a
+                transition: 0.5s
+                &:visited
+                    color: #9bf0e1
+                &:hover
+                    color: #fff
     ul
         margin: 0px
         padding: 0px
@@ -354,9 +371,116 @@ p
     padding-top: 80px
     padding-bottom: 50px
     background-color: #000
+    a
+        text-decoration: none
+        float: left;
+        font-size: 12px
+        font-weight: 400
+        padding: 12px
+        margin: 0
+        color: white
+        transition: 0.3s
+        cursor: pointer
+        &:hover
+            color: #00a34f
+    ul 
+        padding-left: 0px
+        li
+            list-style: none
+            
+    img, svg
+        width: 24px
+        height: 24px
+    svg
+        &:hover path
+            fill: #00a34f
+        
+        
+    .footer_logo
+        font-size: 0/0 a
+        text-shadow: none
+        width: 132px 
+        height: 40px
+        background-image: url('../img/logo.svg') 
+        background-repeat: no-repeat
+        background-size: 100% 100%
+        color: transparent
+        
+    .nav_title
+        color: #919496
+        font-size: 12px
+        letter-spacing: 0.08em
+        margin: 20px 0
+        text-transform: uppercase
+        ul
+            display: flex
+            flex-direction: column
+            padding-left: 0px
+            margin-left: -12px
+            
+    .social
+        padding-right: 0px
+        li 
+            float: right
+            a
+                padding: 15px
+                margin-bottom: 12px
+                background-color: #222326
+                border-radius: 30px
+                margin: 0px 10px
+                display: inline-block
     .elements
-        height: 300px
+        padding-top: 0px
+        height: 100%
+        width: 100px
+        float: right
+        border: none
+
     .row_small
         margin-top: 100px
-        .elements
-            height: 40px
+        .left
+            width: 100%
+            padding-left: 10px
+            text-align: left
+            a
+                color: #919496
+                &:hover
+                    color: #00a34f
+
+        .right
+            margin-top: -5px
+            padding-right: 0px
+            text-align: right
+            span
+                &:after
+                    content: 
+                    display: table
+                    clear: both
+            .flag_icon
+                background-image: url('https://sp-bootstrap.global.ssl.fastly.net/8.0.0/images/flags/tw.svg') 
+                background-repeat: no-repeat
+                background-position: 50%
+                background-size: contain
+                display: inline-block
+                font-size: 18px
+                height: 1em
+                width: 1.33333333em
+
+        .market, .copyright 
+            color: #919496
+            font-size: 12px
+            padding-right: 0px
+            position: absolute
+            right: 0px
+        .market
+            
+        .copyright   
+            top: 35px
+            white-space: nowrap
+        a.market 
+            color: #919496
+            text-decoration: none
+            padding-bottom: 0px
+                
+            
+        

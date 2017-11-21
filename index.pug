@@ -9,19 +9,19 @@ html(lang="zh-TW")
     body
         .wrapper
             .main_bg
-            header.navbar
+            header.navbar.at_top
                 .container
-                    a(href="#")
+                    a(href="#spotify")
                         .navbar_logo Spotify
                     .navbar_items
-                        a(href="#") Premium
-                        a(href="#") Help
+                        a(href="#premium") Premium
+                        a(href="#albums") Help
                         a(href="#") Download
                         li.divider(role="separator")
                         a(href="#") Sign up
                         a(href="#") Log in
             section.main
-                .jumbotron
+                .jumbotron(id="spotify")
                     .carousel.slide(id="carouselIndicators" data-ride="carousel")
                         ol.carousel-indicators
                             li(data-target="#carouselIndicators" data-slide-to="0").active
@@ -81,7 +81,7 @@ html(lang="zh-TW")
                                     <br>
                                     p what's hot in the Top 50.
                 
-                .albums.givePadding
+                .albums.givePadding(id="albums")
                     .container
                         .row
                             .col-1-3
@@ -122,7 +122,7 @@ html(lang="zh-TW")
                     .container
                         .elements 
 
-                .subscriptions.givePadding
+                .subscriptions.givePadding(id="premium")
                     .container
                         .row
                             .col-5-6
@@ -173,21 +173,79 @@ html(lang="zh-TW")
                 .container
                     .row
                         .col-1-6
-                            .elements Elements
+                            a(href="#spotify") 
+                                .footer_logo Spotify
+                                    
                         .col-1-6
-                            .elements Elements
+                            h3.nav_title Company
+                                ul.nav
+                                    li
+                                        a(href="#") About
+                                    li
+                                        a(href="#") Jobs
+                                    li
+                                        a(href="#") Press
+                                    li
+                                        a(href="#") News
+
                         .col-1-6
-                            .elements Elements
+                            h3.nav_title Communities
+                                ul.nav
+                                    li
+                                        a(href="#") For Artists
+                                    li
+                                        a(href="#") Developers
+                                    li
+                                        a(href="#") Brands
+
                         .col-1-6
-                            .elements Elements
-                        .col-1-3
-                            .elements Elements
+                            h3.nav_title Useful Links
+                                ul.nav
+                                    li
+                                        a(href="#") Help
+                                    li
+                                        a(href="#") Gift
+                                    li
+                                        a(href="#") Web Player
+                        .col-1-3.social
+                            ul.nav
+                                li
+                                    a(href="#") 
+                                        img.svg(src="./img/instagram-icon.svg")
+                                li
+                                    a(href="#") 
+                                        img.svg(src="./img/twitter-icon.svg")
+                                li
+                                    a(href="#") 
+                                        img.svg(src="./img/facebook-icon.svg")
                     .row.row_small
                         .col-1-2
-                            .elements Elements
+                            .elements.left
+                                
+                                ul
+                                    li
+                                        a 
+                                            small Legal 
+                                    li
+                                        a 
+                                            small Privacy 
+                                    li
+                                        a 
+                                            small Cookies 
+                                    li
+                                        a 
+                                            small About 
+                                    li
+                                        a 
+                                            small Ads
                         .col-1-2
-                            .elements Elements
-
+                            .elements.right
+                                a(href="#").market
+                                    small.tw Taiwan 
+                                    span.flag_icon
+                                .small
+                                    small.copyright © 2017 Spotify AB
+                                        
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
         script(src="js/transition.js")
         script(src="js/bootstrap.min.js")

@@ -100,11 +100,32 @@ p {
   text-shadow: none;
   width: 132px;
   height: 40px;
-  background-image: url("../img/spotify-logo.png");
+  background-image: url("../img/logo.svg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
   color: transparent;
   cursor: pointer;
+}
+
+.navbar, .at_top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 5;
+  transition: 0.5s;
+}
+
+.navbar .elements, .at_top .elements {
+  height: 80px;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.at_top {
+  background-color: transparent;
 }
 
 .row {
@@ -138,19 +159,6 @@ p {
 
 .col-1-6 {
   width: 16.66667%;
-}
-
-.navbar {
-  background-color: rgba(0, 0, 0, 0.6);
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 5;
-}
-
-.navbar .elements {
-  height: 80px;
 }
 
 .main_bg {
@@ -262,9 +270,17 @@ p {
   height: 300px;
 }
 
-.jumbotron .carousel-inner .item h3 a {
-  color: #fff;
+.jumbotron .carousel-inner .item h4 a {
+  transition: 0.5s;
   text-decoration: underline;
+}
+
+.jumbotron .carousel-inner .item h4 a:visited {
+  color: #9bf0e1;
+}
+
+.jumbotron .carousel-inner .item h4 a:hover {
+  color: #fff;
 }
 
 .jumbotron .carousel-inner .text {
@@ -384,6 +400,18 @@ p {
   white-space: nowrap;
 }
 
+.subscriptions .end p a {
+  transition: 0.5s;
+}
+
+.subscriptions .end p a:visited {
+  color: #9bf0e1;
+}
+
+.subscriptions .end p a:hover {
+  color: #fff;
+}
+
 .subscriptions ul {
   margin: 0px;
   padding: 0px;
@@ -468,16 +496,147 @@ p {
   background-color: #000;
 }
 
+.footer a {
+  text-decoration: none;
+  float: left;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 12px;
+  margin: 0;
+  color: white;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.footer a:hover {
+  color: #00a34f;
+}
+
+.footer ul {
+  padding-left: 0px;
+}
+
+.footer ul li {
+  list-style: none;
+}
+
+.footer img, .footer svg {
+  width: 24px;
+  height: 24px;
+}
+
+.footer svg:hover path {
+  fill: #00a34f;
+}
+
+.footer .footer_logo {
+  font-size: 0/0 a;
+  text-shadow: none;
+  width: 132px;
+  height: 40px;
+  background-image: url("../img/logo.svg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: transparent;
+}
+
+.footer .nav_title {
+  color: #919496;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  margin: 20px 0;
+  text-transform: uppercase;
+}
+
+.footer .nav_title ul {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0px;
+  margin-left: -12px;
+}
+
+.footer .social {
+  padding-right: 0px;
+}
+
+.footer .social li {
+  float: right;
+}
+
+.footer .social li a {
+  padding: 15px;
+  margin-bottom: 12px;
+  background-color: #222326;
+  border-radius: 30px;
+  margin: 0px 10px;
+  display: inline-block;
+}
+
 .footer .elements {
-  height: 300px;
+  padding-top: 0px;
+  height: 100%;
+  width: 100px;
+  float: right;
+  border: none;
 }
 
 .footer .row_small {
   margin-top: 100px;
 }
 
-.footer .row_small .elements {
-  height: 40px;
+.footer .row_small .left {
+  width: 100%;
+  padding-left: 10px;
+  text-align: left;
+}
+
+.footer .row_small .left a {
+  color: #919496;
+}
+
+.footer .row_small .left a:hover {
+  color: #00a34f;
+}
+
+.footer .row_small .right {
+  margin-top: -5px;
+  padding-right: 0px;
+  text-align: right;
+}
+
+.footer .row_small .right span:after {
+  display: table;
+  clear: both;
+}
+
+.footer .row_small .right .flag_icon {
+  background-image: url("https://sp-bootstrap.global.ssl.fastly.net/8.0.0/images/flags/tw.svg");
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: contain;
+  display: inline-block;
+  font-size: 18px;
+  height: 1em;
+  width: 1.33333333em;
+}
+
+.footer .row_small .market, .footer .row_small .copyright {
+  color: #919496;
+  font-size: 12px;
+  padding-right: 0px;
+  position: absolute;
+  right: 0px;
+}
+
+.footer .row_small .copyright {
+  top: 35px;
+  white-space: nowrap;
+}
+
+.footer .row_small a.market {
+  color: #919496;
+  text-decoration: none;
+  padding-bottom: 0px;
 }
  
 
