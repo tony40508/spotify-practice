@@ -370,10 +370,6 @@ p {
   height: inherit;
 }
 
-.whatsOn .album_text {
-  white-space: nowrap;
-}
-
 .whatsOn .album_text p {
   color: #222326;
 }
@@ -740,6 +736,14 @@ p {
   .whatsOn, .givePadding {
     padding-top: 60px !important;
     padding-bottom: 100px !important;
+  }
+  .album_text h2 {
+    font-size: 40px;
+    font-weight: 800;
+  }
+  .album_text h3 {
+    font-size: 30px;
+    font-weight: 800;
   }
   .subscriptions .intro {
     height: 90px !important;
