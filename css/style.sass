@@ -1,12 +1,10 @@
 // preload
-
 #preload_area
     background-image: url(../img/bg-main-img.png);
     background-image: url(../img/iphone-klein-purple.png);
     width: 0px;
     height: 0px;
     display: inline;
-
 
 // global
 *
@@ -22,6 +20,7 @@ body
     font-size: 16px
     line-height: 1.5
     color: white
+    overflow-x: hidden
 
 h1
     font-weight: 900
@@ -52,11 +51,25 @@ p
     overflow: hidden
 
 .container
-    width: 1170px
+    // width: 1170px
+    width: 100%
     height: 100%
     margin: 0 auto
     // border: 1px solid #999
-    padding: 0px 15px
+    padding: 0px 15%
+
+.navbar-inverse
+    border: none
+    margin: 0
+    padding: 0
+    button.navbar-toggle
+        border: none
+        transition: 0.5s
+        &:hover
+            background-color: #eee
+            .icon-bar
+                background-color: rgba(black, 0.5)
+   
 
 .navbar
     .container
@@ -92,7 +105,6 @@ p
             color: transparent
             cursor: pointer
 
-
 .navbar, .at_top
     position: fixed
     top: 0
@@ -100,8 +112,7 @@ p
     width: 100%
     z-index: 5
     transition: 0.5s
-    .elements
-        height: 80px
+    height: 80px
 .navbar 
     background-color: rgba(0, 0, 0, 0.6)
 .at_top
@@ -227,8 +238,6 @@ p
                     color: #9bf0e1
                 &:hover
                     color: #fff
-                
-
         .text
             color: white
             font-weight: normal
@@ -262,15 +271,20 @@ p
 .whatsOn
     background-color: #fff
     padding-bottom: 230px
+    .col-sm-7
+        max-width: 780px
+    .album
+        // margin-bottom: 10%
     .album_art
         float: left
-        width: 50%
+        width: 278px
         img
-            width: auto
-            height: 278px
-    .album_text   
-        padding-left: 90px 
-        white-space: nowrap   
+            width: 100%
+            display: block
+            object-fit: cover
+            height: inherit
+    .album_text 
+        white-space: nowrap  
         p
             color: #222326 
 
@@ -279,6 +293,7 @@ p
     .elements
         height: 400px
     .phone_group
+        width: 1134px
         position: absolute
         top: 0
         right: 0
@@ -367,7 +382,7 @@ p
         width: 498px
         height: 1016px
         background-color: #fff
-        margin-left: 30px
+        margin-left: 50%
         background: url('../img/iphone-klein-purple.png') no-repeat
         background-size: cover
         img
@@ -397,6 +412,9 @@ p
         padding-left: 0px
         li
             list-style: none
+            a
+                &:hover
+                    background-color: transparent
             
     img, svg
         width: 24px
@@ -404,7 +422,6 @@ p
     svg
         &:hover path
             fill: #00a34f
-        
         
     .footer_logo
         font-size: 0/0 a
@@ -482,15 +499,103 @@ p
             padding-right: 0px
             position: absolute
             right: 0px
-        .market
-            
         .copyright   
             top: 35px
             white-space: nowrap
         a.market 
             color: #919496
             text-decoration: none
-            padding-bottom: 0px
-                
-            
+            padding-bottom: 0px          
+
+@media screen and (max-width: 768px)
+    .whatsOn
+        text-align: center
+        .container
+            margin: 0 auto
+    .album_art
+        width: 100% !important
+    .album_text
+        margin-top: 50px       
+    .hidden_sm
+        display: none
+    .albums 
+        text-align: center
+        .container
+            margin: 0 auto
+    .phone
+        display: none 
+    .subscriptions
+        h3.text_aquamarine
+            top: -15px
+        .price
+            position: absolute 
+            top: 35px
+            h3
+                font-size: 18px
+    footer .social
+        li 
+            float: left !important
+        
+@media screen and (max-width: 955px)
+    // navbar
+    .navbar
+        height: 50px
+    .navbar-inverse 
+        .container
+            margin: 0 auto
+            padding: 0
+    .divider, .sign_up, .log_in
+        display: none !important
+        visibility: hidden
+    .navbar-collapse, .collapse, .in
+        overflow-y: hidden !important
+        overflow-x: hidden
+        border: none !important
+    // jumbotron
+    .jumbotron
+        padding-top: 84px
+        padding-bottom: 70px
+        overflow: hidden
+        min-height: 75vh
+    // whatsOn
+    .whatsOn, .givePadding
+        padding-top: 60px !important
+        padding-bottom: 100px !important
+    
+    // subscriptions  
+    .subscriptions
+        .intro
+            height: 90px !important
+        h1
+            font-weight: 600
+            font-size: 50px
+        h2
+            font-size: 40px
+            line-height: 1
+            margin: 0 0 0.75em
+            font-weight: 800
+        h3
+            font-size: 30px
+            font-weight: 800
+            line-height: 1.2
+        .premium    
+            span
+                float: left  !important
+                margin: 0 5px
+                top: -40px
+
+
+@media screen and (max-width: 1160px)  
+    // albums
+    .albums
+        .phone_group
+            width: 597px !important
+            transform: rotate(30deg) translate(100px, -300px) !important
+        .phone
+            width: 179px !important
+            height: 365px !important
+            img
+                top: 35px !important
+                left: calc(100% - 179px + 12px) !important
+                max-height: 280px !important
         
