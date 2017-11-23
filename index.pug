@@ -54,21 +54,19 @@ html(lang="zh-TW")
                     a(href="#whatsOn")
                         span.btn_scroll_text LEARN ABOUT SPOTIFY
                 
-
-
                 .whatsOn.givePadding(id="whatsOn")
                     .container
                         .row
                             .col-xs-12.col-sm-7
                                 .album  
                                     .album_art  
-                                        img(src="https://pl.scdn.co/images/pl/default/a705ea088c587f03f309b71e8216ba6367646cea")
+                                        img.album_pic(src="https://pl.scdn.co/images/pl/default/a705ea088c587f03f309b71e8216ba6367646cea" style="transition-delay: 1s")
                                     .album_art
-                                        img(src="https://i.scdn.co/image/33ce929f53593b7d6de1e7592823153ffb6ff03e")
+                                        img.album_pic(src="https://i.scdn.co/image/33ce929f53593b7d6de1e7592823153ffb6ff03e" style="transition-delay: 1.5s")
                                     .album_art  
-                                        img(src="https://i.scdn.co/image/8b662d81966a0ec40dc10563807696a8479cd48b")
+                                        img.album_pic(src="https://i.scdn.co/image/8b662d81966a0ec40dc10563807696a8479cd48b" style="transition-delay: 2s")
                                     .album_art.hidden_sm
-                                        img(src="https://i.scdn.co/image/6c41981dc659cc8a19a0371f42951d8dec48db7c")
+                                        img.album_pic(src="https://i.scdn.co/image/6c41981dc659cc8a19a0371f42951d8dec48db7c" style="transition-delay: 2.5s")
                             .col-xs-12.col-sm-5
                                 .album_text
                                     h2.text_purple What's on Spotify?
@@ -252,6 +250,5 @@ html(lang="zh-TW")
                                     small.copyright © 2017 Spotify AB
                                         
         script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js")
-        script(src="js/transition.js")
         script(src="js/bootstrap.min.js")
         script(src="js/main.js")

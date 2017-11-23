@@ -363,15 +363,23 @@ p {
   width: 278px;
 }
 
-.whatsOn .album_art img {
+.whatsOn .album_art img.album_pic {
   width: 100%;
   display: block;
   object-fit: cover;
   height: inherit;
+  transition: 1s;
+  transform: translateY(100px) scale(0.7);
+  opacity: 0;
 }
 
 .whatsOn .album_text p {
   color: #222326;
+}
+
+.show {
+  transform: translateY(0px) scale(1) !important;
+  opacity: 1 !important;
 }
 
 .albums .elements {
